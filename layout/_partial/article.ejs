@@ -36,6 +36,9 @@
         <%- post.content %>
       <% } %>
     </div>
+    <% if (!index){ %>
+      <%- partial('post/copyright') %>
+    <% } %>
     <% if (index){ %>
     <div class="article-info article-info-index">
       <%if(post.top){%>
